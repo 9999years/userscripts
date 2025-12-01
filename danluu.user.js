@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         danluu.com page width
 // @namespace    http://github.com/9999years/tampermonkey
-// @version      2025-11-12
+// @version      2025-12-01
 // @description  Make body copy narrower on danluu.com
 // @author       Rebecca Turner
 // @match        https://danluu.com/*
@@ -14,8 +14,9 @@
 
     GM_addStyle(`
         main {
-            max-width: 40em;
-            margin: 0 auto;
+          max-width: 40em;
+          margin: 0 auto;
+          font: 18px/20px sans-serif;
         }
     `);
 })();
