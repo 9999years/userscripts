@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Review in Graphite
 // @namespace    http://github.com/9999years/tampermonkey
-// @version      2025-11-21v2
+// @version      2026-02-03v1
 // @description  Add a button to GitHub PRs which goes to Graphite
 // @author       Rebecca Turner
 // @match        https://github.com/*/pull/*
@@ -36,6 +36,6 @@
         return link;
     }
 
-    document.querySelector(".gh-header-actions")
+    document.querySelector('div[data-component="PH_Actions"] > div.d-flex')
         .prepend(createButton());
 })();
