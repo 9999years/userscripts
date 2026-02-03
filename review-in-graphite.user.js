@@ -28,10 +28,10 @@
         link.innerHTML = `
             <span class="Button-content">
                 <span class="Button-visual Button-leadingVisual">
-                    <img class="octicon octicon-code" width="16">
+                  <img class="octicon octicon-code" width="16">
                 </span>
-            <span class="Button-label">Review in Graphite</span>
-        </span>`;
+              <span class="Button-label">Review in Graphite</span>
+            </span>`;
         link.querySelector('img').src = GM_getResourceURL("icon");
         return link;
     }
